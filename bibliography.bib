@@ -280,6 +280,53 @@
   timestamp = {2011.03.21}
 }
 
+@ARTICLE{Oliveira2011,
+  author = {Oliveira, Leonardo B. and Aranha, Diego F. and Gouv\^{e}a, Conrado
+	P. L. and Scott, Michael and C\'{\i}mara, Danilo F. and L\'{o}pez,
+	Julio and Dahab, Ricardo},
+  title = {TinyPBC: Pairings for authenticated identity-based non-interactive
+	key distribution in sensor networks},
+  journal = {Comput. Commun.},
+  year = {2011},
+  volume = {34},
+  pages = {485--493},
+  month = {March},
+  abstract = {Key distribution in Wireless Sensor Networks (WSNs) is challenging.
+	Symmetric cryptosystems can perform it efficiently, but they often
+	do not provide a perfect trade-off between resilience and storage.
+	Further, even though conventional public key and elliptic curve cryptosystems
+	are computationally feasible on sensor nodes, protocols based on
+	them are not, as they require the exchange and storage of large keys
+	and certificates, which is expensive. Using Pairing-Based Cryptography
+	(PBC) protocols parties can agree on keys without any interaction.
+	In this work, we (i) show how security in WSNs can be bootstrapped
+	using an authenticated identity-based non-interactive protocol and
+	(ii) present TinyPBC, to our knowledge, the most efficient implementation
+	of PBC primitives for 8, 16 and 32-bit processors commonly found
+	in sensor nodes. TinyPBC is able to compute pairings, the most expensive
+	primitive of PBC, in 1.90 s on ATmega128L, 1.27 s on MSP430 and 0.14
+	s on PXA27x.},
+  acmid = {1931219},
+  address = {Newton, MA, USA},
+  doi = {http://dx.doi.org/10.1016/j.comcom.2010.05.013},
+  issn = {0140-3664},
+  issue = {3},
+  issue_date = {March, 2011},
+  keywords = {Efficient implementation, Identity-based cryptography, Key distribution,
+	Pairing-based cryptography, Sensor networks},
+  numpages = {9},
+  publisher = {Butterworth-Heinemann},
+  review = {Discusses the use of IDBC in WSNs. Mainly focussed on implementations
+	(of pairings and finite field aithmetic) for popular platforms. Proposes
+	to use offline PKGs (operated by the network deployer) and use of
+	IDBC to bootstrap security (minimize use of costly IDBC). Use of
+	eta t pairing, detailed discussion of parameters and algorithms.
+	Discusses implementation details for three different microprocessors
+	(ATMega128, MSP430XScale PXA27x). Extensive performance evaluation
+	and comparison with other implementations. Huge literature list.},
+  url = {http://dx.doi.org/10.1016/j.comcom.2010.05.013}
+}
+
 @INPROCEEDINGS{Ryu2007,
   author = {Sunam Ryu and Kevin Butler and Patrick Traynor and Patrick McDaniel},
   title = {Leveraging Identity-Based Cryptography for Node ID Assignment in
@@ -472,6 +519,47 @@
 	of IDBC in MANETs.},
   timestamp = {2011.03.30},
   url = {http://awin.cs.ccu.edu.tw/magazine/IEEE_Wireless/2008/025.pdf}
+}
+
+@INPROCEEDINGS{Zhao2009,
+  author = {Zhao, Xin and Lv, Yuqin and Yeap, Tet Hin and Hou, Bin},
+  title = {A Novel Authentication and Key Agreement Scheme for Wireless Mesh
+	Networks},
+  booktitle = {Proceedings of the 2009 Fifth International Joint Conference on INC,
+	IMS and IDC},
+  year = {2009},
+  series = {NCM '09},
+  pages = {471--474},
+  address = {Washington, DC, USA},
+  publisher = {IEEE Computer Society},
+  abstract = {Security of wireless mesh networks (WMNs) is critical for their deployment
+	and management. To provide the fundamental user authentication, access
+	control and transmission confidentiality services, authentication
+	and key agreement (AKA) is the crucial issue. In this paper, ECC-
+	based self-certified public key cryptosystem (ECCSCPKC) is introduced
+	for constructing WMNs security infrastructure; and its related security
+	schemes, with a few modifications, are used for designing the AKA
+	protocol. The proposed scheme supports an efficient authentication
+	and key agreement between a mesh client and a mesh router, with less
+	cost of communication and computation resources as well as system
+	maintenance.},
+  acmid = {1683966},
+  doi = {http://dx.doi.org/10.1109/NCM.2009.93},
+  isbn = {978-0-7695-3769-6},
+  keywords = {wireless mesh networks, authentication and key agreement, ECC-based
+	self-certified public key cryptosystem},
+  numpages = {4},
+  review = {Uses ECCSCPKC (Tsaur2005) for authentication and key agreement in
+	wireless mesh networks. Uses an offline CA (fully trusted) to issue
+	self certified public keys. Key Agreement used to establish HMAC
+	key, seperate authenticated encryption. All protocols are non interactive.
+	System parameters announced via beacons by mesh routers. Only discusses
+	communication between routers and clients (single hop), no router-to-router
+	or multihop. Routers are fully trusted (no intrusion tolerance).
+	No key revocation (but session keys are ephemeral). No simulation
+	or implementation, security considerations and performance discussions
+	are high-level without proofs.},
+  url = {http://dx.doi.org/10.1109/NCM.2009.93}
 }
 
 @comment{jabref-meta: selector_publisher:}
