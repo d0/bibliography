@@ -71,6 +71,37 @@
   url = {http://eprint.iacr.org/2001/090.pdf}
 }
 
+@INPROCEEDINGS{Deng2004,
+  author = {Hongmei Deng and Annindo Mukherjee and Dharma P. Agrawal},
+  title = {Threshold and Identity-based Key Management and Authentication for
+	Wireless Ad Hoc Networks},
+  booktitle = {in International Conference on Information Technology: Coding and
+	Computing (ITCC’04)},
+  year = {2004},
+  pages = {107--115},
+  abstract = {As various applications of wireless ad hoc network have been proposed,
+	security has become one of the big research challenges and is receiving
+	increasing attention. In this paper, we propose a distributed key
+	management and authentication approach by deploying the recently
+	developed concepts of identity-based cryptography and threshold secret
+	sharing. Without any assumption of pre-fixed trust relationship between
+	nodes, the ad hoc network works in a self-organizing way to provide
+	the key generation and key management service, which effectively
+	solves the problem of single point of failure in the traditional
+	public key infrastructure (PKI)-supported system. The identitybased
+	cryptography mechanism is applied here not only to provide end-to-end
+	authenticity and confidentiality, but also to save network bandwidth
+	and computational power of wireless nodes.},
+  review = {Combination of IDBC and VSS. Novel Ideas: Broadcast of of NID (network
+	identifer) and public key of newly joined nodes, authentication of
+	new nodes via "physical proof" (unspecified), distributed PKG only
+	issues one key/identity (must cache node IDs on all nodes). High
+	level security analysis and performance comparison with certificate
+	based solution. Simulation in NS-2 measuring: 1. Time required to
+	generate master key, ratio of successful private key generations/node
+	and average time  for private key generation/node.}
+}
+
 @INPROCEEDINGS{Desmedt1989,
   author = {Yvo G. Desmedt and Yair Frankel},
   title = {Threshold cryptosystems},
@@ -580,7 +611,9 @@
   keywords = {key management, threshold cryptography, identity-based, ad hoc networks},
   numpages = {4},
   review = {Combines VSS, IDBC and Key Refreshing. Distributed online PKG. Uses
-	broadcast to announce secret witnesses. Badly written, largely derivative,
+	broadcast to announce secret witnesses. Uses interactive key agreement
+	for session keys. Implicit Key Revocation (key expires, distributed
+	PKG must be queried for new key). Badly written, largely derivative,
 	own contributions not clear. No simulation or testbed results, sloppy
 	security analysis.},
   url = {http://portal.acm.org/citation.cfm?id=1548883.1549318}
